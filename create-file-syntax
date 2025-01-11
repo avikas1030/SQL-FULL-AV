@@ -1,0 +1,9 @@
+CREATE TABLE customer(
+  customer_id INT PRIMARY KEY,
+  name VARCHAR(50) NOT NUL,
+  age INT NOT NULL,
+  city CHAR(50),
+  salary NUMERIC
+);
+
+select * from customer;
