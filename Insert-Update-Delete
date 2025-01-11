@@ -1,0 +1,42 @@
+// Insert values
+CREATE TABLE customer (
+   id INT NOT NULL PRIMARY KEY,
+   name VARCHAR(50),
+   age INT NOT NULL,
+   city VARCHAR(50),
+   salary NUMERIC(12, 2)
+);
+
+INSERT INTO customer (id, name, age, city, salary)
+VALUES 
+  (1, 'ANANYA', 25, 'MUMBAI', 100000000),
+  (2, 'VIKAS', 23, 'B.B.Nagar', 20000000),
+  (3, 'AV', 26, 'DELHI', 3500098);
+
+SELECT * FROM customer;
+
+// Update the values
+CREATE TABLE customer (
+   id INT NOT NULL PRIMARY KEY,
+   name VARCHAR(50),
+   age INT NOT NULL,
+   city VARCHAR(50),
+   salary NUMERIC(12, 2)
+);
+
+INSERT INTO customer (id, name, age, city, salary)
+VALUES 
+  (1, 'ANANYA', 25, 'MUMBAI', 100000000),
+  (2, 'VIKAS', 23, 'B.B.Nagar', 20000000),
+  (3, 'AV', 26, 'DELHI', 3500098);
+
+
+UPDATE customer
+SET name = 'VA', age = 24
+WHERE id =  3;
+ SELECT * FROM customer;
+
+//
+delete the row
+DELETE FROM customer
+WHERE id=3;
