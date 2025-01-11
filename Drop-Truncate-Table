@@ -1,0 +1,5 @@
+// DROP TABLE is use to remove the table form the database
+DROP TABLE cutomer;
+
+// TRUNCATE TABLE is use to erase the content from inside the table, table remain same in database but it is empty
+DROP TABLE customer;
