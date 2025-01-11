@@ -1,0 +1,45 @@
+// Alter table is use to change the column
+// Add Column
+CREATE TABLE customer (
+   id INT NOT NULL PRIMARY KEY,
+   name VARCHAR(50),
+   age INT NOT NULL,
+   city VARCHAR(50),
+   salary NUMERIC(12, 2)
+);
+
+INSERT INTO customer (id, name, age, city, salary)
+VALUES 
+  (1, 'ANANYA', 25, 'MUMBAI', 100000000),
+  (2, 'VIKAS', 23, 'B.B.Nagar', 20000000),
+  (3, 'AV', 26, 'DELHI', 3500098);
+
+ALTER TABLE customer
+ADD COLUMN gander VARCHAR(10),
+ADD COLUMN dob VARCHAR(10);
+
+
+SELECT * FROM customer;
+
+// Drop column
+CREATE TABLE customer (
+   id INT NOT NULL PRIMARY KEY,
+   name VARCHAR(50),
+   age INT NOT NULL,
+   city VARCHAR(50),
+   salary NUMERIC(12, 2)
+);
+
+INSERT INTO customer (id, name, age, city, salary)
+VALUES 
+  (1, 'ANANYA', 25, 'MUMBAI', 100000000),
+  (2, 'VIKAS', 23, 'B.B.Nagar', 20000000),
+  (3, 'AV', 26, 'DELHI', 3500098);
+
+ALTER TABLE customer
+ADD COLUMN gander VARCHAR(10),
+ADD COLUMN dob VARCHAR(10);
+
+ALTER TABLE customer
+DROP COLUMN dob;
+SELECT * FROM customer;
