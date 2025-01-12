@@ -1,0 +1,4 @@
+SELECT mode, SUM(amount) AS Total_amount
+FROM accounts
+GROUP BY mode
+ORDER BY Total_amount ASC
