@@ -1,0 +1,3 @@
+SELECT COUNT(*) FROM accounts // count function is use to number of row in any data set
+
+SELECT ROUND(AVG(amount), 3) FROm accounts  // Round function
