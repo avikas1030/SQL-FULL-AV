@@ -1,0 +1,4 @@
+SELECT mode, COUNT(amount) AS Total_amount
+FROM accounts
+GROUP BY mode
+HAVING COUNT(amount) >= 3   // Note WHERE clouse is use with SELECT statement and HAVINg clouse uses with GROUP BY satement
