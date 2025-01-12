@@ -1,0 +1,10 @@
+CREATE TABLE customer(
+  customer_id, first_name, last_name, email, address_id
+)
+
+COPY customer (customer_id, first_name, last_name, email, address_id)
+FROM 'D:\Data Sets AV\customer.csv'
+DELIMITER ','
+CSV HEADER
+
+SELECT * FROM customer
