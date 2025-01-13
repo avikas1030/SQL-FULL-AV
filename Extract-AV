@@ -1,0 +1,5 @@
+SELECT EXTRACT(MONTH FROM payment_date) AS payment_Month, payment_date
+FROM accounts
+
+SELECT EXTRACT(QUARTER FROM payment_date) AS pay_QTR, payment_date
+FROM accounts
