@@ -1,0 +1,17 @@
+SELECT *
+FROM customer AS a
+INNER JOIN accounts AS a
+ON c.customer_id = a.customer_id
+
+SELECT *
+FROM customer AS a
+LEFT JOIN accounts AS a
+ON c.customer_id = a.customer_id
+
+SELECT *
+FROM customer AS a
+RIGHT JOIN accounts AS a
+ON c.customer_id = a.customer_id
+
+
+
