@@ -13,5 +13,10 @@ FROM customer AS a
 RIGHT JOIN accounts AS a
 ON c.customer_id = a.customer_id
 
+SELECT *
+FROM customer AS a
+FULL OUTER JOIN accounts AS a
+ON c.customer_id = a.customer_id
+
 
 
