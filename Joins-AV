@@ -18,5 +18,21 @@ FROM customer AS a
 FULL OUTER JOIN accounts AS a
 ON c.customer_id = a.customer_id
 
+SELECT *
+FROM classroom AS T1
+SLEF JOIN classroom AS T2
+ON T1.roll_no = T2.std_id
+
+SELECT customer_id
+FROM customer
+UNION 
+SELECT customer_id
+FROM accounts
+
+SELECT customer_id
+FROM customer
+UNION ALL
+SELECT customer_id
+FROM accounts
 
 
