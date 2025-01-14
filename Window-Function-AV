@@ -1,0 +1,8 @@
+SELECT marks, st_subject,
+SUM(marks) OVER (PARTITION BY st_subject ORDER BY marks) AS "Total"
+FROM student
+
+SELECT marks, st_subject,                                         // this query is use to find total sum of column with OVER clouse
+SUM(marks) OVER(ORDER BY marks ROWS BETWEEN UNBOUNDED PRECEDING
+ AND UNBOUNDED FOLLOWING) AS "Total"
+ FROM student
