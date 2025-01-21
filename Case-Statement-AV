@@ -1,0 +1,7 @@
+SELECT customer_id, amount,
+CASE
+WHEN amount > 55 THEN 'Expensive price'
+WHEN amount = 55 THEN 'same price'
+ELSE 'less expensive'
+END AS "expense"
+FROM accounts
