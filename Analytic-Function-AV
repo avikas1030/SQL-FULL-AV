@@ -1,0 +1,6 @@
+SELECT marks,
+FIRST_VALUE(marks) OVER(ORDER BY marks) AS "first_name",
+LAST_VALUE(marks) OVER(ORDER BY marks) AS "last_name",
+LEAD(marks) OVER(ORDER BY marks) AS "lead",
+LAG(marks) OVER (ORDER BY marks) AS "lag"
+FROM student
