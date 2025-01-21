@@ -1,0 +1,7 @@
+SELECT customer_id, amount,
+CASE amount
+WHEN 55 THEN 'prime'
+WHEN 45 THEN 'digital'
+ELSE 'ninja'
+END AS "expense"
+FROM accounts
