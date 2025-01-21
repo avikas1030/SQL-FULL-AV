@@ -1,0 +1,6 @@
+SELECT marks,
+ROW_NUMBER() OVER(ORDER BY marks) AS "rows",
+RANK() OVER(ORDER BY marks) AS "rank",
+DENSE_RANK() OVER (ORDER BY marks) AS "dense Rank",
+PERCENT_RANK() OVER(ORDER BY marks) AS "per rank"
+FROM student
