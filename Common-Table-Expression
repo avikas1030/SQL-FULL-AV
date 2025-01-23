@@ -1,0 +1,9 @@
+WITH
+cte_table AS (SELECT *, AVG(amount) OVER(ORDER BY p.amount) AS "average_price",
+COUNT(address_id) OVER(ORDER BY c.customer_id) AS "count_id"
+FROM accounts AS p
+INNER JOIN customer AS c
+ON p.customer_id = c.customer_id
+)
+SELECT first_name, last_name, amount, average_price, count_id
+FROM cte_table
